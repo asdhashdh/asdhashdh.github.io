@@ -92,6 +92,7 @@ let eruda = `fetch("https://cdn.jsdelivr.net/npm/eruda")
     window.erudaLoaded = true;
   }
 });`;
+ eruda.add(erudaCode);
 
 function abCloak(cloakUrl) {
   var win = window.open();
