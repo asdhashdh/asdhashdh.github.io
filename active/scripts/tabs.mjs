@@ -90,9 +90,10 @@ let eruda = `fetch("https://cdn.jsdelivr.net/npm/eruda")
   if (!window.erudaLoaded) {
     eruda.init({ defaults: { displaySize: 45, theme: "AMOLED" } });
     window.erudaLoaded = true;
+    eruda.add(erudaCode);
   }
 });`;
- eruda.add(erudaCode);
+
 
 function abCloak(cloakUrl) {
   var win = window.open();
